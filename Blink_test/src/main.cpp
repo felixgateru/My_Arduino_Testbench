@@ -1,9 +1,18 @@
+// include
 #include <Arduino.h>
 
+
+// define
+#define BLINK_LED 13
+
+
+
 void setup() {
-  // put your setup code here, to run once:
+  pinMode(BLINK_LED,OUTPUT);
+
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
+ digitalWrite(BLINK_LED,!digitalRead(BLINK_LED));
+ delay(500);
 }
