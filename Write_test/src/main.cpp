@@ -1,9 +1,20 @@
 #include <Arduino.h>
 
-void setup() {
-  // put your setup code here, to run once:
+// definitions
+#define DELAY_TIME 500
+#define LED_FLASH 13
+
+int count = 0;
+
+void setup()
+{
+  Serial.begin(9600);
+  pinMode(LED_FLASH, OUTPUT);
 }
 
-void loop() {
-  // put your main code here, to run repeatedly:
+void loop()
+{
+  Serial.print(count++);
+  Serial.println("Hello World");
+  delay(DELAY_TIME);
 }
