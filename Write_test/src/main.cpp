@@ -1,7 +1,7 @@
 #include <Arduino.h>
 
 // definitions
-#define DELAY_TIME 500
+#define DELAY_TIME 12
 #define LED_FLASH 13
 
 int count = 0;
